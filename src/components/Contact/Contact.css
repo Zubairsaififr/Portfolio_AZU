@@ -78,6 +78,40 @@ form input{
     cursor: pointer;
 }
 
+.cv-section {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  padding: 0 20px;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
+}
+
+.cv-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cv-button:hover svg {
+  transform: translateY(4px);
+}
 
 @media (max-width: 750px){
     #contact{

@@ -68,12 +68,13 @@
     bottom: -120px;
     /* Margin ke according match kiya */
     width: 2px;
-    background-color: #d1d5db;
+    background-color: #1f57ab;
     z-index: 1;
 }
 
 .timeline-content {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    background: transparent;
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -81,6 +82,7 @@
     position: relative;
     z-index: 2;
     margin-left: 20px;
+    border-radius: 30px;
 }
 
 .timeline-content:hover {
@@ -100,7 +102,9 @@
 .job-title {
     font-size: 24px;
     font-weight: bold;
-    color: #1f2937;
+    background: linear-gradient(to right, rgb(203, 53, 108), white);
+    background-clip: text;
+    color: transparent;
     margin: 0;
 }
 
@@ -113,7 +117,7 @@
 
 .duration {
     font-size: 18px;
-    color: #6b7280;
+    color: #ffffff;
     white-space: nowrap;
 }
 
@@ -121,7 +125,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #4b5563;
+    color: #ffffff;
 }
 
 .points li {

@@ -29,6 +29,21 @@ function About() {
 
       }
     })
+    gsap.from(".circle ", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      sragger: 1,
+      scrollTrigger: {
+        trigger: ".circle",
+        scroll: "body",
+        scrub: 2,
+
+        start: "top 60%",
+        end: "top 30%",
+
+      }
+    })
     gsap.from(".line ", {
       x: -100,
       opacity: 0,

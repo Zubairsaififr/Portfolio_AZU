@@ -8,7 +8,7 @@
 .AZU{
     padding: 15px;
     margin-left: 10%;
-    height: 200px;
+    height: 250px;
     width: 80%;
     box-shadow: 0 10px 25px   rgb(116, 201, 225);
     border-radius: 30px;
@@ -53,6 +53,8 @@
 
 }
 .aboutdetails{
+    position: relative;
+    margin-top: 100px;
     display: flex;
     gap: 40px;
     flex-direction: column;

@@ -1,0 +1,92 @@
+.social-links-container {
+  padding: 60px 20px;
+  background-color: rgb(17, 20, 23);; /* Dark professional background */
+  color: white;
+  text-align: center;
+}
+
+.social-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #e2e8f0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  width: 120px;
+  border-radius: 16px;
+  background-color: #1e293b;
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.social-icon span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Individual Colors on Hover */
+.social-icon.linkedin:hover {
+  background-color: #0077b5;
+}
+.social-icon.gmail:hover {
+  background-color: #ea4335;
+}
+.social-icon.github:hover {
+  background-color: #333;
+}
+.social-icon.twitter:hover {
+  background-color: #1da1f2;
+}
+.social-icon.phone:hover {
+  background-color: #10b981;
+}
+
+.social-note {
+  font-size: 18px;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 100px;
+    padding: 16px;
+  }
+  
+  .social-title {
+    font-size: 28px;
+  }
+  
+  .social-note {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}
