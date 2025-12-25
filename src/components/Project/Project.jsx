@@ -8,6 +8,7 @@ import spotify from '../../assets/spot.png';
 import cal from '../../assets/ass.png';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import ExperienceSection from '../ExperienceSection/ExperienceSection';
 
 
 
@@ -49,12 +50,9 @@ function Project({title,image}) {
   })
   return (
     <div id='projects'>
-        <h1 id='pera'>Work Experinece</h1>
-        <div className="slider">
-          
-         
-            
-        </div>
+       
+       
+  
     </div>
   )
 }

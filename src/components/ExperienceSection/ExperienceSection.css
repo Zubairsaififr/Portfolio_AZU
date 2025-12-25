@@ -1,0 +1,170 @@
+.experience-section {
+    padding: 100px 20px;
+
+    position: relative;
+    /* Important: relative rakho */
+    overflow: hidden;
+    /* Yeh overlap fix karega */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 4vmax;
+    background: linear-gradient(to right, rgb(203, 53, 108), white);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 120px;
+    /* Space badha diya better separation ke liye */
+    opacity: 0;
+    /* Animation ke liye initial opacity 0 */
+    transform: translateY(50px);
+    /* Neeche se aane ka effect */
+    transition: all 0.8s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+.timeline-line {
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    bottom: -120px;
+    /* Margin ke according match kiya */
+    width: 2px;
+    background-color: #d1d5db;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+.timeline-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 0;
+}
+
+.company {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2563eb;
+    margin: 8px 0 0 0;
+}
+
+.duration {
+    font-size: 18px;
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+.points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #4b5563;
+}
+
+.points li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.points li:before {
+    content: "•";
+    color: #2563eb;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+        padding: 24px;
+    }
+
+    .timeline-dot {
+        left: -20px;
+    }
+
+    .timeline-line {
+        left: -12px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+}
