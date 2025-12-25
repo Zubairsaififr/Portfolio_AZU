@@ -1,107 +1,191 @@
-#about{
+#about {
     width: 100%;
-    height: 100%;
+    min-height: 100vh; /* Better than fixed height for responsiveness */
     display: flex;
-
+    flex-direction: row; /* Default for larger screens */
     
 }
-.AZU{
-    padding: 15px;
-    margin-left: 10%;
-    height: 250px;
+
+.AZU {
+    padding: 20px;
+    margin: 0 auto; /* Center instead of fixed margin-left */
+    max-width: 90%;
     width: 80%;
-    box-shadow: 0 10px 25px   rgb(116, 201, 225);
+    height: auto; /* Allow height to adjust */
+    box-shadow: 0 10px 25px rgb(116, 201, 225);
     border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05); /* Optional subtle bg for card */
 }
-.AZU h1{
-   
-    background: linear-gradient(to right, rgb(198,42,96), white);
+
+.AZU h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
+
 .AZU h3 {
     color: white;
+    font-size: 1.2rem;
 }
-.leftabout{
+
+.leftabout {
     width: 50%;
-    height: 100vh;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-
 }
-.circle-line{
+
+.circle-line {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px; /* Replace fixed lines with gap for easier scaling */
 }
-.circle{
+
+.circle {
     width: 62px;
     height: 62px;
-    border-radius: 50px;
-    background-color: aliceblue;
+    border-radius: 50%;
     background-color: #7ad7ea;
-    box-shadow: 2px 2px 20px #7ad7ea;;
+    box-shadow: 2px 2px 20px #7ad7ea;
+    flex-shrink: 0;
 }
-.line{
-    width: 2px;
-    height: 140px;
-    background-color: aliceblue;
 
+.line {
+    width: 4px; /* Slightly thicker for mobile visibility */
+    height: 120px;
+    background-color: #7ad7ea; /* Match theme color instead of aliceblue */
+    flex-shrink: 0;
 }
-.aboutdetails{
-    position: relative;
-    margin-top: 100px;
+
+.aboutdetails {
+    margin-top: 40px;
     display: flex;
-    gap: 40px;
     flex-direction: column;
-
+    gap: 30px;
 }
-.aboutdetails h1{
-    list-style: none;
-    background: linear-gradient(to right, rgb(198,42,96), white);
+
+.aboutdetails h1 {
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin: 0;
 }
-.aboutdetails li{
+
+.aboutdetails li {
     color: white;
     list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
-.aboutdetails span{
+
+.aboutdetails span {
     color: #7ad7ea;
 }
-.rightabout{
+
+.rightabout {
     width: 50%;
-    height: 100vh;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
     flex-direction: column;
+    gap: 30px;
 }
- @media(max-width: 750px){
-    #about{
+
+/* Tablet and small laptop adjustments */
+@media (max-width: 1024px) {
+    .leftabout, .rightabout {
+        padding: 30px;
+    }
+    
+    .AZU {
+        padding: 15px;
+    }
+    
+    .AZU h1 {
+        font-size: 2rem;
+    }
+    
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .line {
+        height: 100px;
+    }
+}
+
+/* Mobile phones and small screens */
+@media (max-width: 768px) {
+    #about {
         flex-direction: column;
-
     }
-    .leftabout{
+    
+    .leftabout, .rightabout {
         width: 100%;
-        
-       
-        justify-content: center;
+        padding: 20px;
     }
-    .rightabout{
-        width: 100%;
-        
-        justify-content: center;
+    
+    .circle-line {
+        flex-direction: row; /* Horizontal timeline looks better on narrow screens */
+        gap: 15px;
+        overflow-x: auto; /* Allow scrolling if many circles */
+        padding: 20px 0;
     }
-    .line{
-    width: 2px;
-    height: 160px;
-    background-color: aliceblue;
-
+    
+    .line {
+        width: 80px;
+        height: 4px;
+    }
+    
+    .AZU {
+        max-width: 95%;
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .AZU h1 {
+        font-size: 1.8rem;
+    }
+    
+    .aboutdetails {
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .aboutdetails h1 {
+        font-size: 1.6rem;
+    }
+    
+    .aboutdetails li {
+        font-size: 1rem;
+    }
 }
- }
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .AZU h1 {
+        font-size: 1.5rem;
+    }
+    
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .line {
+        width: 60px;
+    }
+    
+    .leftabout, .rightabout {
+        padding: 15px;
+    }
+}

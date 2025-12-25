@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import man from "../../assets/gg2.png"
+import man from "../../assets/Girl.png"
 
 import { Typewriter } from 'react-simple-typewriter'
 import { useGSAP } from '@gsap/react'
