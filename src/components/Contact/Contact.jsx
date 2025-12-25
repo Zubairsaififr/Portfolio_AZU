@@ -66,7 +66,7 @@ function Contact() {
             <img src={con} alt="" />
           </div>
           <div className="rightcontact">
-            <form action="https://formspree.io/f/mblydlje" method='POST'>
+            <form action="https://formspree.io/f/xreznbry" method='POST'>
               <input name='Username' type="text" placeholder='Name' />
               <input name='Email' type="email" placeholder='Email' />
               <textarea name="message" id="textaera" placeholder='Message Me'></textarea>

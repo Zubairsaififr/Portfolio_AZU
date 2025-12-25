@@ -161,15 +161,15 @@ function About() {
 
                 </ul>
               </div>
-              <div className="Certification">
+              {/* <div className="Certification">
                 <h1>Certification</h1>
                 <ul>
-                  <li>Python Fullstack Web Development <span>Ducat Sector 63 Noida</span></li>
+                  <li> <span>Ducat Sector 63 Noida</span></li>
                   <li>AR/VR Development By IIT Mundi <span>Ducat Sector 63 Noida</span></li>
                   <li>Solid Work <span> Cadd Center Ghaziabad</span></li>
 
                 </ul>
-              </div>
+              </div> */}
               <div className="Skills">
                 <h1>Skills</h1>
                 <ul>

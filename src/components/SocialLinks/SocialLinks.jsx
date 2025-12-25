@@ -26,7 +26,7 @@ const SocialLinks = () => {
         </a>
 
         <a 
-          href="mailto:your.email@gmail.com" 
+          href="mailto:your.azukagazi123@gmail.com" 
           className="social-icon gmail"
         >
           <FiMail size={28} />
