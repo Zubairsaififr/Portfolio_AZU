@@ -22,7 +22,7 @@ function App() {
     
     < Nav/>
     <Home/>
-    <About/>
+    <About id="abt"/>
     {/* <Project/> */}
     <ExperienceSection/>
     <Contact/>
