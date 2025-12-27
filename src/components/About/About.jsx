@@ -189,13 +189,14 @@ function About() {
                   <li><span>Name</span>: Azuka Gazi</li>
                   <li><span>D.O.B</span>: 14-Dec-2000</li>
                   <li><span>Gender</span>: Female</li>
-                  <li><span>Language Known</span>: English, Hindi</li>
+                  <li><span>Language Known</span>: English, Hindi,Urdu</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="rightabout">
             <Card title="Payroll Management" image={python} />
+            <Card title="Multitasking" image={react} />
             <Card title="Multitasking" image={react} />
             <Card title="HR Policies" image={mysql} />
           </div>
