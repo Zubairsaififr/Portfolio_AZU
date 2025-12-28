@@ -4,6 +4,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 
 import Contact from './components/Contact/Contact.jsx'
+import Snowfall from 'react-snowfall'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,7 +20,7 @@ function App() {
   }, []);
   return (
     <>
-    
+    <Snowfall/>
     < Nav/>
     <Home/>
     <About id="abt"/>

@@ -53,13 +53,13 @@ const SocialLinks = () => {
           <span>Twitter</span>
         </a>
 
-        {/* <a 
+        <a 
           href="tel:+919876543210" 
           className="social-icon phone"
         >
           <FiPhone size={28} />
           <span>Call Me</span>
-        </a> */}
+        </a>
 
       </div>
 
