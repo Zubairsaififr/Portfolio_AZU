@@ -40,7 +40,7 @@ function Home() {
           <div className="line2">Azuka Gazi</div>
           <div className="line3">
             <Typewriter
-              words={["Human Resource Manager", "Regional HR", "HR Generalist", "IT Recruiter"]}
+              words={["Design Engineer", "Regional HR", "HR Generalist", "IT Recruiter"]}
               typeSpeed={100}
               deleteSpeed={50}
               delaySpeed={1000}

@@ -178,8 +178,10 @@ function About() {
                   <li>Scanning and Sourcing</li>
                   <li>Maintaining KPIs </li>
                   <li>Staffing and Performance Management  </li>
-                  <li>Salary Negotiation </li>
                   <li>Time management  </li>
+                  <li>Salary Negotiation </li> 
+                  <li>Salary Negotiation </li> 
+                  <li>Salary Negotiation </li> 
 
                 </ul>
               </div>
